@@ -1,4 +1,4 @@
-# (c) adarsh-goel
+# (c) Nanthakps-goel
 # Bot Uptime
 
 def get_readable_time(seconds: int) -> str:

@@ -1,17 +1,17 @@
-#(c) Adarsh-Goel
+#(c) Nanthakps-Goel
 import os
 import asyncio
 from asyncio import TimeoutError
-from Adarsh.bot import StreamBot
-from Adarsh.utils.database import Database
-from Adarsh.utils.human_readable import humanbytes
-from Adarsh.vars import Var
+from Nanthakps.bot import StreamBot
+from Nanthakps.utils.database import Database
+from Nanthakps.utils.human_readable import humanbytes
+from Nanthakps.vars import Var
 from urllib.parse import quote_plus
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
+from Nanthakps.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 
 
@@ -113,7 +113,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
 
-<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n❖ YouTube.com/OpusTechz</b>"""
+<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, quote=True)
         await m.reply_text(

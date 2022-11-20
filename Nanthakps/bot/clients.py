@@ -1,10 +1,10 @@
-# (c) adarsh-goel
+# (c) Nanthakps-goel
 
 import asyncio
 import logging
 from ..vars import Var
 from pyrogram import Client
-from Adarsh.utils.config_parser import TokenParser
+from Nanthakps.utils.config_parser import TokenParser
 from . import multi_clients, work_loads, StreamBot
 
 

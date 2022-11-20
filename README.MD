@@ -50,7 +50,7 @@ Either you could locally host or deploy on [Heroku](https://heroku.com)
 
 Press the below button to Fast deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aadhi000/File-To-Link)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Tamilupdates/File-To-Link)
 
 
 🚀Features<p>
@@ -74,12 +74,12 @@ Press the below button to Fast deploy on Heroku
 
 
 ```py
-git clone https://github.com/adarsh-goel/Filestreambot-pro
+git clone https://github.com/Tamilupdates/File-To-Link
 cd Filestreambot-pro
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-python3 -m Adarsh
+python3 -m Nanthakps
 ```
 
 and to stop the whole bot,
@@ -159,7 +159,7 @@ Bot also Supported with Channels. Just add bot Channel as Admin. If any new file
 
 ### Credits : 
 
-- [Adarsh Goel](https://github.com/adarsh-goel)
+- [Nanthakps Goel](https://github.com/Nanthakps-goel)
 - [DeekshithSH](https://github.com/DeekshithSH) 
 - <b>⍣ [ᴀᴀᴅʜɪ](https://GitHub.com/Aadhi000)</b>
 - Everyone In This Journey !
