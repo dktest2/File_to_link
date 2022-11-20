@@ -1,8 +1,8 @@
-from Nanthakps.vars import Var
-from Nanthakps.bot import StreamBot
-from Nanthakps.utils.human_readable import humanbytes
-from Nanthakps.utils.file_properties import get_file_ids
-from Nanthakps.server.exceptions import InvalidHash
+from Adarsh.vars import Var
+from Adarsh.bot import StreamBot
+from Adarsh.utils.human_readable import humanbytes
+from Adarsh.utils.file_properties import get_file_ids
+from Adarsh.server.exceptions import InvalidHash
 import urllib.parse
 import aiofiles
 import logging

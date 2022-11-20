@@ -1,15 +1,15 @@
 #Aadhi000 
-from Nanthakps.bot import StreamBot
-from Nanthakps.vars import Var
+from Adarsh.bot import StreamBot
+from Adarsh.vars import Var
 import logging
 logger = logging.getLogger(__name__)
-from Nanthakps.bot.plugins.stream import MY_PASS
-from Nanthakps.utils.human_readable import humanbytes
-from Nanthakps.utils.database import Database
+from Adarsh.bot.plugins.stream import MY_PASS
+from Adarsh.utils.human_readable import humanbytes
+from Adarsh.utils.database import Database
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
-from Nanthakps.utils.file_properties import get_name, get_hash, get_media_file_size
+from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 from pyrogram.types import ReplyKeyboardMarkup
 

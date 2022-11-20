@@ -1,14 +1,14 @@
 import math
 import asyncio
 import logging
-from Nanthakps.vars import Var
+from Adarsh.vars import Var
 from typing import Dict, Union
-from Nanthakps.bot import work_loads
+from Adarsh.bot import work_loads
 from pyrogram import Client, utils, raw
 from .file_properties import get_file_ids
 from pyrogram.session import Session, Auth
 from pyrogram.errors import AuthBytesInvalid
-from Nanthakps.server.exceptions import FIleNotFound
+from Adarsh.server.exceptions import FIleNotFound
 from pyrogram.file_id import FileId, FileType, ThumbnailSource
 
 

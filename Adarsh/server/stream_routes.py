@@ -9,13 +9,13 @@ import secrets
 import mimetypes
 from aiohttp import web
 from aiohttp.http_exceptions import BadStatusLine
-from Nanthakps.bot import multi_clients, work_loads, StreamBot
-from Nanthakps.server.exceptions import FIleNotFound, InvalidHash
-from Nanthakps import StartTime, __version__
+from Adarsh.bot import multi_clients, work_loads, StreamBot
+from Adarsh.server.exceptions import FIleNotFound, InvalidHash
+from Adarsh import StartTime, __version__
 from ..utils.time_format import get_readable_time
 from ..utils.custom_dl import ByteStreamer, offset_fix, chunk_size
-from Nanthakps.utils.render_template import render_page
-from Nanthakps.vars import Var
+from Adarsh.utils.render_template import render_page
+from Adarsh.vars import Var
 
 
 routes = web.RouteTableDef()

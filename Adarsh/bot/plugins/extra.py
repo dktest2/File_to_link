@@ -1,10 +1,10 @@
-from Nanthakps.bot import StreamBot
+from Adarsh.bot import StreamBot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
 import time
 import shutil, psutil
 from utils_bot import *
-from Nanthakps import StartTime
+from Adarsh import StartTime
 
         
     

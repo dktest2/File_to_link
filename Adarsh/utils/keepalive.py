@@ -2,7 +2,7 @@ import asyncio
 import logging
 import aiohttp
 import traceback
-from Nanthakps.vars import Var
+from Adarsh.vars import Var
 
 
 async def ping_server():
