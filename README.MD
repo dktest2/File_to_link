@@ -1,6 +1,6 @@
 **<h1 align="center"><b>⍣ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ</b></h1>**
 <p align="center">
-      <img src="https://telegra.ph/file/a2303826e0c6d18bf9cab.jpg">
+      <img src="https://graph.org/file/a2303826e0c6d18bf9cab.jpg">
   </a>
   <br />
 <hr>
@@ -112,7 +112,7 @@ DATABASE_URL=mongodb_uri
 
 `DATABASE_URL` : MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help to get the URI you can click on logo below!
 
-[![Deploy k mongo](https://telegra.ph/file/fd68906852c71fdd68bef.jpg)](https://www.youtube.com/watch?v=HhHzCfrqsoE)
+[![Deploy k mongo](https://graph.org/file/fd68906852c71fdd68bef.jpg)](https://www.youtube.com/watch?v=HhHzCfrqsoE)
 
  Option Vars
 

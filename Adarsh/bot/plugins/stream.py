@@ -78,7 +78,7 @@ async def private_receive_handler(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("ᴊᴏɪɴ ɴᴏᴡ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("ᴊᴏɪɴ ɴᴏᴡ", url=f"https://telgram.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 )
@@ -98,7 +98,7 @@ async def private_receive_handler(c: Client, m: Message):
         
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
-        photo_xr="https://telegra.ph/file/3cd15a67ad7234c2945e7.jpg"
+        photo_xr="https://graph.org/file/3cd15a67ad7234c2945e7.jpg"
         
         
 
