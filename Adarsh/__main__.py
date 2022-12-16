@@ -65,7 +65,7 @@ async def start_services():
     print('\n')
     print('---------------------------------------------------------------------------------------------------------')
     print('---------------------------------------------------------------------------------------------------------')
-    print(' follow me for more such exciting bots! https://github.com/Tamilupdates')
+    print('Follow Me For More Such Exciting Bots! https://telegram.me/Nanthakps')
     print('---------------------------------------------------------------------------------------------------------')
     print('\n')
     print('----------------------- Service Started -----------------------------------------------------------------')
@@ -75,7 +75,7 @@ async def start_services():
     if Var.ON_HEROKU:
         print('                        app runnng on =>> {}'.format(Var.FQDN))
     print('---------------------------------------------------------------------------------------------------------')
-    print('Give a star to my repo https://github.com/Tamilupdates/File-To-Link  also follow me for new bots')
+    print('Follow Me on Telegram : https://telegram.me/Nanthakps')
     print('---------------------------------------------------------------------------------------------------------')
     await idle()
 
