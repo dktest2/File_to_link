@@ -2,16 +2,16 @@
 import os
 import asyncio
 from asyncio import TimeoutError
-from Adarsh.bot import StreamBot
-from Adarsh.utils.database import Database
-from Adarsh.utils.human_readable import humanbytes
-from Adarsh.vars import Var
+from Nanthakps.bot import StreamBot
+from Nanthakps.utils.database import Database
+from Nanthakps.utils.human_readable import humanbytes
+from Nanthakps.vars import Var
 from urllib.parse import quote_plus
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
+from Nanthakps.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 
 

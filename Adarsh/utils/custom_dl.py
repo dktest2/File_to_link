@@ -1,14 +1,14 @@
 import math
 import asyncio
 import logging
-from Adarsh.vars import Var
+from Nanthakps.vars import Var
 from typing import Dict, Union
-from Adarsh.bot import work_loads
+from Nanthakps.bot import work_loads
 from pyrogram import Client, utils, raw
 from .file_properties import get_file_ids
 from pyrogram.session import Session, Auth
 from pyrogram.errors import AuthBytesInvalid
-from Adarsh.server.exceptions import FIleNotFound
+from Nanthakps.server.exceptions import FIleNotFound
 from pyrogram.file_id import FileId, FileType, ThumbnailSource
 
 
@@ -33,7 +33,7 @@ class ByteStreamer:
             generate_file_properties: returns the properties for a media of a specific message contained in Tuple.
             generate_media_session: returns the media session for the DC that contains the media file.
             yield_file: yield a file from telegram servers for streaming.
-            
+
             <b>Contact on Telegra : https;//telegram.me/Nanthakps</b>
         """
         self.clean_timer = 30 * 60
