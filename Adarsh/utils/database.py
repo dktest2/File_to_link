@@ -1,4 +1,4 @@
-#(c) Nanthakps-Goel
+#(c) Nanthakps
 import datetime
 import motor.motor_asyncio
 

@@ -1,1 +1,1 @@
-# (c) Nanthakps-goel
+# (c) Nanthakps

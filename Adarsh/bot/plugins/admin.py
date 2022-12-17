@@ -1,4 +1,4 @@
-# (c) @Nanthakps-goel
+# (c) @Nanthakps
 import os
 import time
 import string

@@ -98,7 +98,7 @@ async def private_receive_handler(c: Client, m: Message):
         
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
-        photo_xr="https://graph.org/file/c3be6f1788d82c8d14da7.jpg"
+        photo_xr=f"{Var.PICS}"
         
         
 
