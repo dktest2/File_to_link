@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if PASSWORD:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \nDon't know the password contact @Nanthakps")
+            await m.reply_text(f"Login first using /login cmd \nDon't know the password contact @{Var.OWNER_USERNAME}")
             return
         if check_pass != PASSWORD:
             await pass_db.delete_user(m.chat.id)
