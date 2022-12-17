@@ -100,7 +100,7 @@ DATABASE_URL=mongodb_uri
 
 `API_HASH` : Goto [my.telegram.org](https://my.telegram.org) to obtain this.
   
-`MY_PASS` : Bot PASSWORD
+`PASSWORD` : Bot Password
 
 `BOT_TOKEN` : Get the bot token from [@BotFather](https://telegram.dog/BotFather)
 

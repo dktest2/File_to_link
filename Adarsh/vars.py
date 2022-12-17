@@ -11,7 +11,7 @@ class Var(object):
     API_ID = int(getenv('API_ID'))
     API_HASH = str(getenv('API_HASH'))
     BOT_TOKEN = str(getenv('BOT_TOKEN'))
-    name = str(getenv('SESSION_NAME', 'filetolinkbot'))
+    name = str(getenv('SESSION_NAME', 'File-To-Link'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '-1'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
@@ -29,8 +29,8 @@ class Var(object):
     else:
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    HAS_SSL=bool(getenv('HAS_SSL',False))
-    if HAS_SSL:
+    SSL=bool(getenv('SSL',False))
+    if SSL:
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)

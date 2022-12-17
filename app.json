@@ -75,12 +75,12 @@
           "value": "False",
           "required": false
       },
-      "HAS_SSL": {
+      "SSL": {
           "description": "Default value is True",
           "value": "True",
           "required": false
       },
-       "MY_PASS": {
+       "PASSWORD": {
           "description": "Leave empty if dont need password else enter Your Password",
           "value": "",
           "required": false
