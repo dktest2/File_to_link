@@ -113,7 +113,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 🖥 Watch Link :  {}</b>"""
 
-        await log_msg.reply_text(text=f"<b>👤 Requested:  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n😊 User ID :  <code>{m.from_user.id}</code>\n\n🖥 Stream Link :  {stream_link}\n📥 Download Link :  {online_link}</b>", disable_web_page_preview=True, quote=True)
+        await log_msg.reply_text(text=f"<b>👤 Requested:  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n😊 User ID :  <code>{m.from_user.id}</code>\n\n🖥 Stream Link :  {stream_link}\n\n📥 Download Link :  {online_link}</b>", disable_web_page_preview=True, quote=True)
         await m.reply_text(
             
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
