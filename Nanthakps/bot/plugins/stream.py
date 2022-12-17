@@ -1,4 +1,4 @@
-#(c) Nanthakps-Goel
+# (c) Nanthakps
 import os
 import asyncio
 from asyncio import TimeoutError
@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n If You don't know Contact Admin @Nanthakps\n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text(f"Now send me password.\n\n If You don't know Contact Admin @{Var.OWNER_USERNAME}\n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text

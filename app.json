@@ -16,7 +16,7 @@
   "repository": "https://github.com/Tamilupdates/File-To-Link",
   "success_url": "/",
   "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://t.me/Nanthakps",
+  "website": "https://telegram.me/Nanthakps",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",

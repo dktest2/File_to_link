@@ -1,4 +1,4 @@
-#Nanthakps
+# (c) Nanthakps
 from Nanthakps.bot import StreamBot
 from Nanthakps.vars import Var
 import logging
