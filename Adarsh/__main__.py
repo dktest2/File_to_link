@@ -73,7 +73,7 @@ async def start_services():
     print('                        server ip =>> {}:{}'.format(bind_address, Var.PORT))
     print('                        Owner =>> {}'.format((Var.OWNER_USERNAME)))
     if Var.ON_HEROKU:
-        print('                        app runnng on =>> {}'.format(Var.FQDN))
+        print('                        app runnng on =>> {}'.format(Var.YOUR_IP))
     print('---------------------------------------------------------------------------------------------------------')
     print('Follow Me on Telegram : https://telegram.me/Nanthakps')
     print('---------------------------------------------------------------------------------------------------------')

@@ -34,7 +34,7 @@
       "BOT_TOKEN": {
           "description": "Get this value from @BotFather"
       },
-      "BIN_CHANNEL": {
+      "LOG_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
           
       },
@@ -89,7 +89,7 @@
           "description": "Read the readme for more info about this var  Leave Empty  For heroku",
           "required": false
       },
-      "FQDN": {
+      "YOUR_IP": {
           "description": "Read the readme for more info about this var  **Leave Empty for heroku**",
           "required": false
       },

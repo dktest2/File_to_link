@@ -85,9 +85,9 @@ An example of `config.env` file:
 API_ID=12345
 API_HASH=esx576f8738x883f3sfzx83
 BOT_TOKEN=55838383:yourtbottokenhere
-BIN_CHANNEL=-100
+LOG_CHANNEL=-100
 PORT=8080
-FQDN=your_server_ip
+YOUR_IP=your_server_ip
 OWNER_ID=your_user_id
 DATABASE_URL=mongodb_uri
 ```
@@ -104,7 +104,7 @@ DATABASE_URL=mongodb_uri
 
 `BOT_TOKEN` : Get the bot token from [@BotFather](https://telegram.dog/BotFather)
 
-`BIN_CHANNEL` : Create a new channel (private/public), add [@missrose_bot](https://telegram.dog/MissRose_bot) as admin to the channel and type /id. Now copy paste the ID into this field.
+`LOG_CHANNEL` : Create a new channel (private/public), add [@missrose_bot](https://telegram.dog/MissRose_bot) as admin to the channel and type /id. Now copy paste the ID into this field.
   
 `OWNER_USERNAME` : U should be knowing it afterall it's your username dont remember ? it just go to settings!
 
@@ -130,12 +130,12 @@ DATABASE_URL=mongodb_uri
 
 `NO_PORT` : If you don't want your port to be displayed. You should point your `PORT` to `80` (http) or `443` (https) for the links to work. Ignore this if you're on Heroku.
 
-`FQDN` :  A Fully Qualified Domain Name if present. Defaults to `WEB_SERVER_BIND_ADDRESS` </details>
+`YOUR_IP` :  A Fully Qualified Domain Name if present. Defaults to `WEB_SERVER_BIND_ADDRESS` </details>
 
 <details>
   <summary><b>How to Use :</b></summary>
 
-:warning: **Before using the  bot, don't forget to add the bot to the `BIN_CHANNEL` as an Admin**
+:warning: **Before using the  bot, don't forget to add the bot to the `LOG_CHANNEL` as an Admin**
  
 `/start` : To check if the bot is alive or not.
 

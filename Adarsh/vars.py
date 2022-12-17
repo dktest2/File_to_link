@@ -14,7 +14,7 @@ class Var(object):
     name = str(getenv('SESSION_NAME', 'File-To-Link'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '-1'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
+    LOG_CHANNEL = int(getenv('LOG_CHANNEL'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -28,12 +28,12 @@ class Var(object):
     
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
+    YOUR_IP = str(getenv('YOUR_IP', BIND_ADRESS)) if not ON_HEROKU or getenv('YOUR_IP') else APP_NAME+'.herokuapp.com'
     SSL=bool(getenv('SSL',False))
     if SSL:
-        URL = "https://{}/".format(FQDN)
+        URL = "https://{}/".format(YOUR_IP)
     else:
-        URL = "http://{}/".format(FQDN)
+        URL = "http://{}/".format(YOUR_IP)
     DATABASE_URL = str(getenv('DATABASE_URL'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split())) 

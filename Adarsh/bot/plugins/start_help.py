@@ -19,7 +19,7 @@ async def start(b, m):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
         await b.send_message(
-            Var.BIN_CHANNEL,
+            Var.LOG_CHANNEL,
             f"#NEW_USER: \n\nNew User [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started !!"
         )
     usr_cmd = m.text.split("_")[-1]
@@ -98,7 +98,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
 
-        get_msg = await b.get_messages(chat_id=Var.BIN_CHANNEL, ids=int(usr_cmd))
+        get_msg = await b.get_messages(chat_id=Var.LOG_CHANNEL, ids=int(usr_cmd))
 
         file_size = None
         if get_msg.video:
@@ -116,8 +116,8 @@ async def start(b, m):
         elif get_msg.audio:
             file_name = f"{get_msg.audio.file_name}"
 
-        stream_link = "https://{}/{}".format(Var.FQDN, get_msg.id) if Var.ON_HEROKU or Var.NO_PORT else \
-            "http://{}:{}/{}".format(Var.FQDN,
+        stream_link = "https://{}/{}".format(Var.YOUR_IP, get_msg.id) if Var.ON_HEROKU or Var.NO_PORT else \
+            "http://{}:{}/{}".format(Var.YOUR_IP,
                                      Var.PORT,
                                      get_msg.id)
 
@@ -134,7 +134,7 @@ async def help_handler(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
         await bot.send_message(
-            Var.BIN_CHANNEL,
+            Var.LOG_CHANNEL,
             f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
         )
     if Var.UPDATES_CHANNEL is not None:
@@ -185,7 +185,7 @@ async def about_handler(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
         await bot.send_message(
-            Var.BIN_CHANNEL,
+            Var.LOG_CHANNEL,
             f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
         )
     if Var.UPDATES_CHANNEL is not None:
