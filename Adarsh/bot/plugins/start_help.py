@@ -116,7 +116,7 @@ async def start(b, m):
         elif get_msg.audio:
             file_name = f"{get_msg.audio.file_name}"
 
-        stream_link = "https://{}/{}".format(Var.YOUR_IP, get_msg.id) if Var.ON_HEROKU or Var.NO_PORT else \
+        stream_link = "https://{}/{}".format(Var.YOUR_IP, get_msg.id) if Var.ON_RENDER or Var.NO_PORT else \
             "http://{}:{}/{}".format(Var.YOUR_IP,
                                      Var.PORT,
                                      get_msg.id)
