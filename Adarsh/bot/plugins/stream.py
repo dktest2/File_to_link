@@ -94,28 +94,26 @@ async def private_receive_handler(c: Client, m: Message):
     try:
 
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{get_hash(log_msg)}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
-        online_link = f"{Var.URL}{str(log_msg.id)}/{get_hash(log_msg)}"
+        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
         photo_xr="https://graph.org/file/c3be6f1788d82c8d14da7.jpg"
         
         
 
         msg_text ="""
-<b>ʏᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡
+<b>⚡️ Your Link is Generated ⚡️
 
-<b>🗂️ ғɪʟᴇ ɴᴀᴍᴇ : </b> <i><b>{}</b></i>
+📁 File Name :  {}
 
-<b>🏷 ғɪʟᴇ sɪᴢᴇ : </b> <i><b>{}</b></i>
+📦 File Size :  {}
 
-<b>📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ : </b> <i><b>{}</b></i>
+📥 Download Link :  {}
 
-<b>🖥 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ : </b> <i><b>{}</b></i>
+🖥 Watch Link :  {}</b>"""
 
-<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ</b>"""
-
-        await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**ꜱᴛʀᴇᴀᴍ ʟɪɴᴋ :** {stream_link}\n**ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :** {online_link}", disable_web_page_preview=True, quote=True)
+        await log_msg.reply_text(text=f"<b>👤 Requested:  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n😊 User ID :  <code>{m.from_user.id}</code>\n\n🖥 Stream Link :  {stream_link}\n📥 Download Link :  {online_link}</b>", disable_web_page_preview=True, quote=True)
         await m.reply_text(
             
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
@@ -147,8 +145,8 @@ async def channel_receive_handler(bot, broadcast):
         return
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{get_hash(log_msg)}"       
-        online_link = f"{Var.URL}{str(log_msg.id)}/{get_hash(log_msg)}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"       
+        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         await log_msg.reply_text(
             text=f"**Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream_link}",
             quote=True
