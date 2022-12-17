@@ -1,4 +1,4 @@
-#Aadhi000 
+#Nanthakps
 from Adarsh.bot import StreamBot
 from Adarsh.vars import Var
 import logging

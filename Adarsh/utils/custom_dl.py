@@ -33,9 +33,6 @@ class ByteStreamer:
             generate_file_properties: returns the properties for a media of a specific message contained in Tuple.
             generate_media_session: returns the media session for the DC that contains the media file.
             yield_file: yield a file from telegram servers for streaming.
-            
-        This is a modified version of the <https://github.com/eyaadh/megadlbot_oss/blob/master/mega/telegram/utils/custom_download.py>
-        Thanks to Eyaadh <https://github.com/eyaadh>
         """
         self.clean_timer = 30 * 60
         self.client: Client = client
@@ -181,8 +178,8 @@ class ByteStreamer:
     ) -> Union[str, None]:
         """
         Custom generator that yields the bytes of the media file.
-        Modded from <https://github.com/eyaadh/megadlbot_oss/blob/master/mega/telegram/utils/custom_download.py#L20>
-        Thanks to Eyaadh <https://github.com/eyaadh>
+        
+        <b>Contact on Telegra : https;//telegram.me/Nanthakps</b>
         """
         client = self.client
         work_loads[index] += 1
