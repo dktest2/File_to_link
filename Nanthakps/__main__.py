@@ -50,7 +50,7 @@ async def start_services():
             spec = importlib.util.spec_from_file_location(import_path, plugins_dir)
             load = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(load)
-            sys.modules["Nanthakps.bot.plugins." + plugin_name] = load
+            sys.modules["TamilnaduCM.bot.plugins." + plugin_name] = load
             print("Imported => " + plugin_name)
     if Var.ON_RENDER:
         print("------------------ Starting Keep Alive Service ------------------")
@@ -65,7 +65,7 @@ async def start_services():
     print('\n')
     print('---------------------------------------------------------------------------------------------------------')
     print('---------------------------------------------------------------------------------------------------------')
-    print('Follow Me For More Such Exciting Bots! https://telegram.me/Nanthakps')
+    print('Follow Me For More Such Exciting Bots! https://telegram.me/TamilnaduCM')
     print('---------------------------------------------------------------------------------------------------------')
     print('\n')
     print('----------------------- Service Started -----------------------------------------------------------------')
@@ -75,7 +75,7 @@ async def start_services():
     if Var.ON_RENDER:
         print('                        app runnng on =>> {}'.format(Var.YOUR_IP))
     print('---------------------------------------------------------------------------------------------------------')
-    print('Follow Me on Telegram : https://telegram.me/Nanthakps')
+    print('Follow Me on Telegram : https://telegram.me/TamilnaduCM')
     print('---------------------------------------------------------------------------------------------------------')
     await idle()
 
