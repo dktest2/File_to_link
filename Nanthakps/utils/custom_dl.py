@@ -34,7 +34,7 @@ class ByteStreamer:
             generate_media_session: returns the media session for the DC that contains the media file.
             yield_file: yield a file from telegram servers for streaming.
 
-            <b>Contact on Telegram : https;//telegram.me/Nanthakps</b>
+            <b>Contact on Telegram : https;//telegram.me/TamilnaduCM</b>
         """
         self.clean_timer = 30 * 60
         self.client: Client = client
