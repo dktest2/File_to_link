@@ -226,7 +226,7 @@ async def about_handler(bot, message):
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
 ┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : ғɪʟᴇ ᴛᴏ ʟɪɴᴋ
-┣⪼<b>ᴀᴅᴍɪɴ : <a href='https://telegram.me/Nanthakps'>ɴᴀɴᴛʜᴀᴋᴘꜱ</a></b>
+┣⪼<b>ᴀᴅᴍɪɴ : <a href='https://telegram.me/TamilnaduCM'>TamilnaduCM</a></b>
 ┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
 ┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
 ┃
