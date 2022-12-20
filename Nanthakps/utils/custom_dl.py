@@ -181,7 +181,7 @@ class ByteStreamer:
         """
         Custom generator that yields the bytes of the media file.
 
-        <b>Contact on Telegram : https;//telegram.me/Nanthakps</b>
+        <b>Contact on Telegram : https;//telegram.me/TamilnaduCM</b>
         """
         client = self.client
         work_loads[index] += 1
