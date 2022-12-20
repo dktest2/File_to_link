@@ -50,7 +50,7 @@ async def start_services():
             spec = importlib.util.spec_from_file_location(import_path, plugins_dir)
             load = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(load)
-            sys.modules["TamilnaduCM.bot.plugins." + plugin_name] = load
+            sys.modules["Nanthakps.bot.plugins." + plugin_name] = load
             print("Imported => " + plugin_name)
     if Var.ON_RENDER:
         print("------------------ Starting Keep Alive Service ------------------")
