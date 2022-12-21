@@ -78,7 +78,7 @@ async def private_receive_handler(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("⚡ ᴊᴏɪɴ ɴᴏᴡ ⚡", url=f"https://telgram.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("⚡ ᴊᴏɪɴ ɴᴏᴡ ⚡", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 )
