@@ -41,7 +41,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("⚡️ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚡️", url=f"https://telgram.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("⚡️ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚡️", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
                             ]
                         ]
                     )
@@ -84,7 +84,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", url=f"https://telgram.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
                             ]                           
                         ]
                     )
@@ -155,7 +155,7 @@ async def help_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("⚡ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url=f"https://telgram.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("⚡ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 )
@@ -206,7 +206,7 @@ async def about_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("⚡ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url=f"https://telgram.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("⚡ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url=f"https://telegram.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 )
